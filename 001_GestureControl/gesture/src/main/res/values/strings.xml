@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="enable_camera_preview_key">enable_camera_preview_key</string>
+    <string name="enable_camera_preview">开启摄像头预览</string>
+</resources>
