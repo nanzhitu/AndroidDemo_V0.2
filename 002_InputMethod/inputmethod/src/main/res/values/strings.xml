@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InputMethod</string>
+    <string name="tips">tips</string>
+    <string name="subtype_en_US">Neo输入法(EN)</string>
+    <drawable name="green">#00ff01</drawable>
+    <drawable name="red">#ff0000</drawable>
+    <drawable name="blue">#0000ff</drawable>
+    <drawable name="white">#ffffff</drawable>
+</resources>
