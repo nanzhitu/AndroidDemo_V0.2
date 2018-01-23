@@ -1,6 +1,5 @@
 package com.example.neo.utils.utils;
 
-import android.util.Config;
 import android.util.Log;
 
 import com.example.neo.utils.BaseApplication;
@@ -12,7 +11,7 @@ import java.util.Locale;
 
 
 /**
- * Created by Administrator on 2017/6/19.
+ * Created by neo on 2017/6/19.
  *
  */
 
