@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="recordpcm.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recordStart"
+            android:text="录制开始" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recordFinish"
+            android:text="录制结束" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/playrec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tinycapRecord"
+            android:text="Tinycap开始" />
+
+        <Button
+            android:id="@+id/playech0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tinycapFinish"
+            android:text="T停止" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/finishrec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test"
+            android:text="test" />
+
+        <Button
+            android:id="@+id/finishech0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test1"
+            android:text="test1" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="36dp"
+        android:text="TextView" />
+
+</LinearLayout>
