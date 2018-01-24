@@ -1,9 +1,11 @@
 package com.example.neo.utils.utils;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.wifi.WifiManager;
 import android.util.Log;
 
 /**
@@ -87,6 +89,20 @@ public final class NetworkUtils {
             Log.d("NetworkUtils", "isAvailableByPing() called" + result.successMsg);
         }
         return ret;
+    }
+
+
+
+    /**
+     * 判断 wifi 是否打开
+     * <p>需添加权限 {@code <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>}</p>
+     *
+     * @return {@code true}: 是<br>{@code false}: 否
+     */
+    public static boolean getWifiEnabled() {
+        @SuppressLint("WifiManagerLeak")
+        WifiManager wifiManager = (WifiManager) Utils.getApp().getSystemService(Context.WIFI_SERVICE);
+        return wifiManager.isWifiEnabled();
     }
 
 }
