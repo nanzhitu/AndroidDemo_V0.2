@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JNI_demo.iml" filepath="$PROJECT_DIR$/JNI_demo.iml" />
+      <module fileurl="file://E:\Workspaces\android_studio\JNI_demo\UseSo\UseSo.iml" filepath="E:\Workspaces\android_studio\JNI_demo\UseSo\UseSo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_so/test_so.iml" filepath="$PROJECT_DIR$/test_so/test_so.iml" />
+    </modules>
+  </component>
+</project>
