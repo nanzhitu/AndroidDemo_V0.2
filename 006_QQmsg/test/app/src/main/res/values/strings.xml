@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">test</string>
+
+    <string name="linkman">联系人名字</string>
+    <string name="send">发送语音</string>
+    <string name="video">QQ电话</string>
+</resources>

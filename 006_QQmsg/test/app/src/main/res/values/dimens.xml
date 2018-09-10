@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="msg_btn_text">21.3dp</dimen>
+    <dimen name="msg_chat_text">20dp</dimen>
+    <dimen name="msg_linkman_text">24dp</dimen>
+    <dimen name="msg_time_text">16dp</dimen>
+</resources>

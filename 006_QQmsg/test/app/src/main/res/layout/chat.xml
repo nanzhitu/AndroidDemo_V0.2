@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back" >
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/linkman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/linkman"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/msg_linkman_text"
+            android:textColor="@color/msg_white"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/btn_video"
+                android:background="@mipmap/dialog_btn_bg_default"
+                android:drawableLeft="@mipmap/dialog_btn_voice"
+                android:paddingRight="40dp"
+                android:drawablePadding="18dp"
+                android:text="@string/send"
+                android:textColor="@color/msg_white"
+                android:textSize="@dimen/msg_btn_text" />
+            <Button
+                android:id="@+id/btn_video"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/btn_send"
+                android:layout_marginLeft="40dp"
+                android:background="@mipmap/dialog_btn_bg_default"
+                android:drawableLeft="@mipmap/dialog_btn_call"
+                android:paddingRight="40dp"
+                android:drawablePadding="18dp"
+                android:textSize="@dimen/msg_btn_text"
+                android:textColor="@color/msg_white"
+                android:text="@string/video"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@id/rl_layout"
+        android:layout_above="@id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:stackFromBottom="true"
+        android:overScrollMode="never"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        />
+</RelativeLayout>
