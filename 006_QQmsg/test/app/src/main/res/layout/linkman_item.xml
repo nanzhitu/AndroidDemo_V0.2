@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_linkman"
+    android:layout_width="240dp"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/item_linkman_selected"
+    android:gravity="center_vertical">
+
+    <View
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/iv_linkman_head"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:focusable="false"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/avatar_default"
+            />
+
+        <TextView
+            android:id="@+id/iv_linkman_status"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/message_num_bg"
+            android:focusable="false"
+            android:includeFontPadding="false"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        />
+    <TextView
+        android:id="@+id/tv_linkman_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/linkman_defalut"
+        android:textColor="@color/msg_white"
+        android:text="联系人"
+        />
+</LinearLayout>

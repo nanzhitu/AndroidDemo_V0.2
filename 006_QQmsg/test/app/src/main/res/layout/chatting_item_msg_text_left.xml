@@ -31,7 +31,7 @@
             android:layout_marginLeft="15dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="@mipmap/dialog_fail"
+            android:background="@mipmap/avatar_default"
             />
         <RelativeLayout
             android:id="@+id/tv_l_msg"
@@ -49,6 +49,8 @@
                 android:textSize="@dimen/msg_chat_text"
                 android:textColor="@color/msg_white"
                 android:visibility="gone"
+                android:layout_marginTop="@dimen/padding_text"
+                android:layout_marginBottom="@dimen/padding_text"
                 />
             <ImageView
                 android:id="@+id/iv_l_audio"
@@ -58,6 +60,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
                 android:background="@mipmap/dialog_play_left_01"
+                android:layout_marginTop="@dimen/padding_text"
+                android:layout_marginBottom="@dimen/padding_text"
                 />
             <TextView
                 android:id="@+id/tv_l_audio_time"
@@ -68,7 +72,8 @@
                 android:textSize="@dimen/msg_chat_text"
                 android:textColor="@color/msg_white"
                 android:visibility="visible"
-                android:text="       6"
+                android:layout_marginTop="@dimen/padding_text"
+                android:layout_marginBottom="@dimen/padding_text"
                 />
         </RelativeLayout>
         <ImageView

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_wiki">
+        <item>你还可以这样问，“泰山”，“长江”</item>
+        <item>你还可以这样问，“孙中山是谁？”</item>
+        <item>你还可以这样问，“中国最长的河流是什么河？”</item>
+    </string-array>
+
+    <string-array name="help_weather">
+        <item>你还可以这样问，“未来三天的天气如何？”</item>
+        <item>你还可以这样问，“明天北京的天气怎么样？”</item>
+        <item>你还可以这样问，“明天适合出行吗？”</item>
+    </string-array>
+    <string-array name="help_search_video">
+        <item>你还这样问，“战争片”，“科幻片”，“爱情片”</item>
+        <item>你可以说，“第几个”来选择播放的影片哦</item>
+        <item>你还可以这样问，“我想看最新的电影”</item>
+        <item>你还可以这样问，“我想看周星驰的电影”</item>
+    </string-array>
+
+    <string-array name="help_common">
+        <item>你可以说“打开帮助中心”，获取更多帮助</item>
+        <item>你可以说“打开xx（应用名）”打开某个app</item>
+        <item>你可以说“返回”，“确定”可以语音操控页面的返回和确定</item>
+        <item>你可以说“进入智能音响模式”可以进入音响模式</item>
+        <item>你可以说“打开电视”可以从音箱模式进入电视观看模式</item>
+        <item>你可以说海美迪可以通过语音控制物联网设备哦</item>
+    </string-array>
+    <string-array name="help_music">
+        <item>你还可以说，“我想听一首抒情的歌”，“我想听一首伤感的歌”</item>
+        <item>你还可以说，“我想听周杰伦的歌”</item>
+        <item>你还可以说，“我想听一首英文歌”</item>
+    </string-array>
+    <string-array name="help_news">
+        <item>你还可以说，“我想听体育新闻”，“我想听财经新闻”</item>
+        <item>你还可以说，“我想听今天的新闻”</item>
+    </string-array>
+    <string-array name="help_fm">
+        <item>你还可以说，“我想听北京新闻台”</item>
+        <item>你还可以说，“我想听广播”</item>
+    </string-array>
+    <string-array name="help_hemdia">
+        <item>你可以说“打开xx（应用名）”打开某个app</item>
+        <item>你可以说“返回”，“确定”可以语音操控页面的返回和确定</item>
+        <item>你可以说“进入智能音响模式”可以进入音响模式</item>
+        <item>你可以说“打开电视”可以从音箱模式进入电视观看模式</item>
+        <item>你可以通过语音控制物联网设备哦</item>
+    </string-array>
+
+</resources>

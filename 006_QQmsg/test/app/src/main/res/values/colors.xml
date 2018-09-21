@@ -3,9 +3,53 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="black66">#66000000</color>
+    <color name="white">#ffffff</color>
 
+    <!--wave-->
+    <color name="wave_region_1_start_color">#4D006eff</color>
+    <color name="wave_region_1_end_color">#4D00c8dc</color>
+
+    <color name="wave_region_2_start_color">#1A006eff</color>
+    <color name="wave_region_2_end_color">#1A00c8dc</color>
+
+    <color name="wave_line_1_start_color">#00a4ff</color>
+    <color name="wave_line_1_end_color">#0DFFFFFF</color>
+
+    <color name="wave_line_2_start_color">#0D00f6d0</color>
+    <color name="wave_line_2_end_color">#05FFFFFF</color>
+    <color name="particle_green_color">#00b49d</color>
+    <color name="white_20_color">#33ffffff</color>
+
+    <color name="white40">#66ffffff</color>
+    <color name="red40">#66F9553B</color>
+    <color name="black">#000</color>
+
+    <color name="kttv_common_webview_bg">#0A1117</color>
+    <color name="kttv_common_player_error_extra_text_color">#66FFFFFF</color>
+    <color name="kttv_common_tvdialog_bg">#e4333333</color>
+    <color name="kttv_common_white80">#ccffffff</color>
+    <color name="kttv_common_white60">#99ffffff</color>
+    <color name="kttv_common_wihte10">#19ffffff</color>
+    <color name="kttv_common_white50">#80ffffff</color>
+
+    <color name="statu_bar_bg">#ccc</color>
+    <color name="background_transparent">#0000</color>
+    <color name="fm_bg_black">#060912</color>
+    <color name="transparent">#00000000</color>
+
+    <!--小资源相关BEGIN-->
+    <color name="fw_text_color_normal">#FFF</color>
+    <color name="fw_text_color_hint">#989692</color>
+    <color name="fw_background_color">#F2000000</color>
+    <!--小资源相关END-->
+
+    <!--QQ MSG相关BEGIN-->
     <color name="bg_black">#060912</color>
 
     <color name="msg_white">#ffffff</color>
-    <color name="msg_time">#999999</color>
+    <color name="msg_time">#7f999999</color>
+    <color name="msg_black">#000000</color>
+    <color name="msg_white_50">#80ffffff</color>
+    <!--QQ MSG相关END-->
 </resources>

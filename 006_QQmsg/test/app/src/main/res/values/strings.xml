@@ -1,7 +1,94 @@
 <resources>
-    <string name="app_name">test</string>
+    <string name="app_name">Ai支持</string>
 
+    <!--百科-->
+    <string name="you_can_ask_this">你可以这样问：</string>
+    <string name="wiki_content">世界上最长的河是什么河？\n\n孙中山是谁？\n\n中国的首都是哪个地方？</string>
+    <string name="lrc">"作词 方文山 作曲 周杰伦,素胚勾勒出青花笔锋浓转淡,瓶身描绘的牡丹一如你初妆,冉冉檀香透过窗心事我了然,宣纸上走笔至此搁一半,釉色渲染仕女图韵味被私藏,而你嫣然的一笑如含苞待放,你的美一缕飘散,去到我去不了的地方,天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里,在瓶底书汉隶仿前朝的飘逸,就当我为遇见你伏笔,天青色等烟雨 而我在等你,月色被打捞起 晕开了结局,如传世的青花瓷自顾自美丽,你眼带笑意,色白花青的锦鲤跃然于碗底,临摹宋体落款时却惦记着你,你隐藏在窑烧里千年的秘密,极细腻犹如绣花针落地,帘外芭蕉惹骤雨门环惹铜绿,而我路过那江南小镇惹了你,在泼墨山水画里,你从墨色深处被隐去,天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里,在瓶底书汉隶仿前朝的飘逸,就当我为遇见你伏笔,天青色等烟雨 而我在等你,月色被打捞起 晕开了结局,如传世的青花瓷自顾自美丽,你眼带笑意,天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里,在瓶底书汉隶仿前朝的飘逸,就当我为遇见你伏笔,天青色等烟雨 而我在等你,月色被打捞起 晕开了结局,如传世的青花瓷自顾自美丽,你眼带笑意"</string>
+    <!--天氣模塊-->
+    <string name="city">深圳市</string>
+    <string name="cloud">多云</string>
+    <string name="weather_range">21°~31°</string>
+    <string name="line">/</string>
+    <string name="overcast_to_clear">阴转晴</string>
+    <string name="clear_to_overcast">晴转阴</string>
+    <string name="hail">冰雹</string>
+    <string name="thundershower">雷阵雨</string>
+    <string name="shower">阵雨</string>
+    <string name="sleet">雨夹雪</string>
+    <string name="snow">雪</string>
+    <string name="rain">雨</string>
+    <string name="sun">晴</string>
+    <string name="haze">霾</string>
+    <string name="fog">雾</string>
+    <string name="floating_dust">浮尘</string>
+    <string name="blowing_sand">扬沙</string>
+    <string name="sand_storm">沙尘暴</string>
+    <string name="frost">霜</string>
+    <string name="cloudy">多云</string>
+    <string name="overcast">阴</string>
+    <string name="tempture_">°~</string>
+    <string name="tempture_1">°/</string>
+    <string name="tempture">°</string>
+    <string name="today_weather">今天天气</string>
+    <string name="weather">天气</string>
+    <string name="todays">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="tomorrowAfternoon">后天</string>
+    <string name="current_temperature">当前温度</string>
+    <string name="temperature">温度</string>
+    <string name="to">到</string>
+    <string name="today">今天</string>
+
+    <string name="call_set_onekey">一键通话</string>
+    <string name="call_send_msg">发送消息</string>
+    <string name="call_audio">语音通话</string>
+    <string name="call_master">主人</string>
+
+ 
+    <!--search-->
+    <string name="search_index_nohave">There is currently no %1$dth</string>
+    <string name="search_totalvideo">为您找到%1$d部</string>
+ 
+    <string name="qr_account">请使用QQ扫码，开通QQ音乐海美迪会员</string>
+    <string name="music_qq_info">智能设备QQ音乐会员和手机QQ音乐会员不通用</string>
+    <string name="account">QQ音乐海美迪</string>
+    <string name="huiyuan">会员VIP</string>
+    <string name="zhuanxiang">专享</string>
+    <string name="music_2">扫码进行VIP充值或兑换才能享受更多特权</string>
+    <string name="music_high">畅听高品质音乐</string>
+    <string name="music_chang">畅享海量正版音乐</string>
+    <string name="music_ge">随心点播个性音乐</string>
+    <string name="music_tong">支持音乐收藏</string>
+
+    <string name="user_title">腾讯云小微</string>
+    <string name="user_login_info">登录后可以享受腾讯云小微更多服务</string>
+    <string name="user_login">请使用QQ扫码登录</string>
+    <string name="help">你可以说“打开帮助中心”，获取更多帮助</string>
+
+    <!--闹钟-->
+    <string name="metting">开会</string>
+    <string name="delete">删除</string>
+    <string name="clock">闹钟</string>
+
+    <string name="alarm_later">稍后提醒</string>
+    <string name="close_alarm">关闭闹钟</string>
+    <string name="open_alarm">打开闹钟</string>
+    <string name="delete_alarm">删除闹钟</string>
+    <string name="go_tuan_jian">去团建</string>
+    <string name="time">19:00:00</string>
+    <string name="alarm">提醒</string>
+    <string name="shutdown">关机</string>
+    <string name="no_alarm_things">没有设置闹钟任务</string>
+    <string name="title">标题</string>
+    <string name="xiaowei_offline">小微已离线</string>
+
+    <!--QQ MSG相关BEGIN-->
     <string name="linkman">联系人名字</string>
-    <string name="send">发送语音</string>
+    <string name="send_start">点击说话</string>
+    <string name="send_stop">点击发送</string>
     <string name="video">QQ电话</string>
+    <string name="speaking">正在说话</string>
+    <string name="speak_tips">按【OK】确认发送 按【返回】取消发送</string>
+    <!--QQ MSG相关END-->
 </resources>

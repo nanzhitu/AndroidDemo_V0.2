@@ -42,7 +42,7 @@ public class ChatMsgViewAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private static final int noShowTime = 2*60;
     private int mSelect = -1;   //选中项
-    private int mClick = -1;   //选中项
+    private int mClick = -1;   //点击项
     private int needPlayTime = -1; //选中项需要播放的时间
     private boolean mStopPlay = true;
     private ChatMsgEntity mClickEntity = new ChatMsgEntity();

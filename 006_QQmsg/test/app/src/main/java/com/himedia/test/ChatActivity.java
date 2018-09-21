@@ -29,13 +29,17 @@ public class ChatActivity extends Activity implements View.OnClickListener {
     private EditText mEditTextContent;
     //聊天内容的适配器
     private ChatMsgViewAdapter mAdapter;
-    private ListView mListView;
+    private LinkManViewAdapter mLinkManViewAdapter;
+    private ListView mListView,mLinkMan;
     private Button mSend,mVideo;
     //聊天的内容
     private List<ChatMsgEntity> mDataArrays = new ArrayList<ChatMsgEntity>();
 
+    private List<LinkManEntity> mLinkManArrays = new ArrayList<>();
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Utils.init(this.getApplication());
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);// 去掉标题栏
         setContentView(R.layout.chat);
@@ -47,6 +51,7 @@ public class ChatActivity extends Activity implements View.OnClickListener {
     //初始化视图
     private void initView() {
         mListView = (ListView) findViewById(R.id.listview);
+        mLinkMan = (ListView)findViewById(R.id.lv_linkman);
         mSend = findViewById(R.id.btn_send);
         mVideo = findViewById(R.id.btn_video);
 
@@ -60,7 +65,12 @@ public class ChatActivity extends Activity implements View.OnClickListener {
         mSend.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                Log.d(TAG,"onFocusChange mSend");
+                Log.d(TAG,"onFocusChange mSend= "+hasFocus);
+                if(hasFocus){
+                    mSend.setBackgroundResource(R.mipmap.dialog_btn_bg_selected);
+                }else{
+                    mSend.setBackgroundResource(R.mipmap.dialog_btn_bg_default);
+                }
             }
         });
 
@@ -74,7 +84,12 @@ public class ChatActivity extends Activity implements View.OnClickListener {
         mVideo.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                Log.d(TAG,"onFocusChange mVideo");
+                Log.d(TAG,"onFocusChange mVideo = "+hasFocus);
+                if(hasFocus){
+                    mVideo.setBackgroundResource(R.mipmap.dialog_btn_bg_selected);
+                }else{
+                    mVideo.setBackgroundResource(R.mipmap.dialog_btn_bg_default);
+                }
             }
         });
     }
@@ -99,6 +114,10 @@ public class ChatActivity extends Activity implements View.OnClickListener {
     private boolean[] isRcv = {true,false,true,false,true,false,false,false,true,false,true,false,false,false,true,false};
     private final static int COUNT = 16;
 
+    private int[] msgnum = {100,99,1};
+    private boolean[] isread = {false,false,true};
+    private String[] name = {"小明","qqqqq","夏冬"};
+
     //初始化要显示的数据
     private void initData() {
         for(int i = 0; i < COUNT; i++) {
@@ -119,8 +138,55 @@ public class ChatActivity extends Activity implements View.OnClickListener {
             entity.setMsgType(msgtype[i]);
             mDataArrays.add(entity);
         }
+
+        for(int i =0; i< 3; i++){
+            LinkManEntity linkman = new LinkManEntity();
+            linkman.setRemark(name[i]);
+            linkman.setHasRead(isread[i]);
+            linkman.setMsgNum(msgnum[i]);
+
+            mLinkManArrays.add(linkman);
+        }
+        mLinkManViewAdapter = new LinkManViewAdapter(this,mLinkManArrays);
+
+        mLinkMan.setAdapter(mLinkManViewAdapter);
+
         mAdapter = new ChatMsgViewAdapter(this, mDataArrays);
         mListView.setAdapter(mAdapter);
+
+
+        //init
+        mLinkManViewAdapter.changeSelected(0);
+        mLinkManViewAdapter.setFocusStatus(true);
+        mSend.requestFocus();
+
+        mLinkMan.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+
+                mLinkManViewAdapter.setFocusStatus(!hasFocus);
+            }
+        });
+
+        mLinkMan.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                mLinkManViewAdapter.changeSelected(position);
+                Log.d(TAG,"LinkMan position = "+position);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        mLinkMan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        });
 
         mListView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -146,8 +212,13 @@ public class ChatActivity extends Activity implements View.OnClickListener {
     }
 
     public void onClick(View view) {
-        // TODO Auto-generated method stub
+        Log.d(TAG,"keyevent = "+view.getId());
         switch(view.getId()) {
+            case KeyEvent.KEYCODE_DPAD_LEFT:
+
+                break;
+            case KeyEvent.KEYCODE_DPAD_RIGHT:
+                break;
         }
     }
 

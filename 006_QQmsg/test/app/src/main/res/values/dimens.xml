@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Wave -->
+    <dimen name="wave_a_light">3dp</dimen>
+    <dimen name="wave_a_dark">5dp</dimen>
+    <dimen name="wave_width">2dp</dimen>
+
+    <dimen name="wave_w_light">2dp</dimen>
+    <dimen name="wave_w_dark">2dp</dimen>
+
+    <dimen name="particle_view_width">360dp</dimen>
+    <dimen name="particle_view_height">184dp</dimen> <!-- TODO -->
+    <dimen name="particle_circle_max_r">10dp</dimen>
+
+    <dimen name="particle_circle_r">4dp</dimen>
+    <dimen name="particle_origin_x">40dp</dimen>
+    <dimen name="particle_origin_rand">320dp</dimen>
+    <dimen name="particle_origin_acc_v">12dp</dimen>
+
+    <dimen name="wave_view_sin_max_height">60dp</dimen>
+
+    <dimen name="wave_particale_1_wdith">13.3dp</dimen>
+    <dimen name="wave_particale_1_height">13.3dp</dimen>
+    <dimen name="wave_particale_1_x">25dp</dimen>
+    <dimen name="wave_particale_1_y">94dp</dimen>
+    <dimen name="wave_particale_1_radius">4dp</dimen>
+
+    <dimen name="wave_particale_2_wdith">13.3dp</dimen>
+    <dimen name="wave_particale_2_height">33.3dp</dimen>
+    <dimen name="wave_particale_2_x">78dp</dimen>
+    <dimen name="wave_particale_2_y">98.4dp</dimen>
+    <dimen name="wave_particale_2_radius">2.5dp</dimen>
+
+    <dimen name="wave_particale_3_wdith">10dp</dimen>
+
+    <dimen name="wave_particale_3_x">125.33dp</dimen>
+    <dimen name="wave_particale_3_y">79.4dp</dimen>
+    <dimen name="wave_particale_3_radius">3.5dp</dimen>
+
+    <dimen name="wave_particale_4_wdith">16.6dp</dimen>
+    <dimen name="wave_particale_4_x">179.66dp</dimen>
+    <dimen name="wave_particale_4_y">108.4dp</dimen>
+    <dimen name="wave_particale_4_radius">5dp</dimen>
+
+    <dimen name="wave_particale_5_wdith">10dp</dimen>
+    <dimen name="wave_particale_5_x">236.66dp</dimen>
+    <dimen name="wave_particale_5_y">76.4dp</dimen>
+    <dimen name="wave_particale_5_radius">4dp</dimen>
+
+    <dimen name="wave_particale_6_wdith">16.6dp</dimen>
+    <dimen name="wave_particale_6_x">297.66dp</dimen>
+    <dimen name="wave_particale_6_y">103.4dp</dimen>
+    <dimen name="wave_particale_6_radius">3.5dp</dimen>
+
+    <dimen name="wave_particale_7_wdith">13.3dp</dimen>
+    <dimen name="wave_particale_7_height">16.6dp</dimen>
+    <dimen name="wave_particale_7_x">336dp</dimen>
+    <dimen name="wave_particale_7_y">80.4dp</dimen>
+    <dimen name="wave_particale_7_radius">2dp</dimen>
+
+    <dimen name="wave_line_width">1.5dp</dimen>
+    <dimen name="wave_truncate_x">20dp</dimen>
+
+    <!--小资源相关尺寸BEGIN-->
+    <dimen name="fw_textsize_normal">25sp</dimen>
+    <dimen name="fw_textsize_hint">23sp</dimen>
+    <dimen name="fw_margin_normal">5dp</dimen>
+    <dimen name="fw_margin_top_normal">10dp</dimen>
+    <dimen name="fw_padding_normal">5dp</dimen>
+    <dimen name="fw_padding_bigger">20dp</dimen>
+    <dimen name="fw_wakeup_zone_height">224dp</dimen>
+    <dimen name="fw_padding_text">15dp</dimen>
+    <!--小资源相关尺寸END-->
+
+    <!--QQ MSG相关BEGIN-->
     <dimen name="msg_btn_text">21.3dp</dimen>
     <dimen name="msg_chat_text">20dp</dimen>
     <dimen name="msg_linkman_text">24dp</dimen>
     <dimen name="msg_time_text">16dp</dimen>
+    <dimen name="speaking_text">20dp</dimen>
+    <dimen name="speak_tips_text">16dp</dimen>
+    <dimen name="padding_text">6dp</dimen>
+    <dimen name="linkman_select">42px</dimen>
+    <dimen name="linkman_defalut">36px</dimen>
+    <!--QQ MSG相关END-->
 </resources>
