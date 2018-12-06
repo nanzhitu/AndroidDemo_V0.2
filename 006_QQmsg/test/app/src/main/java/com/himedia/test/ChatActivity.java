@@ -31,6 +31,9 @@ public class ChatActivity extends Activity implements View.OnClickListener {
     private ChatMsgViewAdapter mAdapter;
     private LinkManViewAdapter mLinkManViewAdapter;
     private ListView mListView,mLinkMan;
+    private int mPosition;
+    private boolean isLinkManSelected;
+    private boolean isSendSelected;
     private Button mSend,mVideo;
     //聊天的内容
     private List<ChatMsgEntity> mDataArrays = new ArrayList<ChatMsgEntity>();
@@ -67,6 +70,7 @@ public class ChatActivity extends Activity implements View.OnClickListener {
             public void onFocusChange(View v, boolean hasFocus) {
                 Log.d(TAG,"onFocusChange mSend= "+hasFocus);
                 if(hasFocus){
+                    isSendSelected = true;
                     mSend.setBackgroundResource(R.mipmap.dialog_btn_bg_selected);
                 }else{
                     mSend.setBackgroundResource(R.mipmap.dialog_btn_bg_default);
@@ -86,6 +90,7 @@ public class ChatActivity extends Activity implements View.OnClickListener {
             public void onFocusChange(View v, boolean hasFocus) {
                 Log.d(TAG,"onFocusChange mVideo = "+hasFocus);
                 if(hasFocus){
+                    isSendSelected = false;
                     mVideo.setBackgroundResource(R.mipmap.dialog_btn_bg_selected);
                 }else{
                     mVideo.setBackgroundResource(R.mipmap.dialog_btn_bg_default);
@@ -151,20 +156,31 @@ public class ChatActivity extends Activity implements View.OnClickListener {
 
         mLinkMan.setAdapter(mLinkManViewAdapter);
 
+//        mLinkMan.post(new Runnable() {
+//            @Override
+//            public void run() {
+//                mLinkMan.setItemChecked(1,true);
+//            }
+//        });
+
         mAdapter = new ChatMsgViewAdapter(this, mDataArrays);
         mListView.setAdapter(mAdapter);
 
-
+        mLinkMan.setSelection(1);
         //init
-        mLinkManViewAdapter.changeSelected(0);
+        mLinkManViewAdapter.changeSelected(1);
+
         mLinkManViewAdapter.setFocusStatus(true);
         mSend.requestFocus();
 
         mLinkMan.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-
+                Log.d(TAG,"mLinkMan "+hasFocus);
                 mLinkManViewAdapter.setFocusStatus(!hasFocus);
+                if(hasFocus) {
+                    isLinkManSelected = true;
+                }
             }
         });
 
@@ -173,6 +189,7 @@ public class ChatActivity extends Activity implements View.OnClickListener {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 mLinkManViewAdapter.changeSelected(position);
                 Log.d(TAG,"LinkMan position = "+position);
+                mPosition = position;
             }
 
             @Override
@@ -220,6 +237,37 @@ public class ChatActivity extends Activity implements View.OnClickListener {
             case KeyEvent.KEYCODE_DPAD_RIGHT:
                 break;
         }
+    }
+
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        Log.d(TAG,"keyCode = "+keyCode);
+        switch(keyCode) {
+            case KeyEvent.KEYCODE_DPAD_LEFT:
+                if(isSendSelected){
+                    viewFocus(mLinkMan);
+                    mLinkMan.setSelection(mPosition);
+                    isSendSelected = false;
+                    return true;
+                }
+                break;
+            case KeyEvent.KEYCODE_DPAD_RIGHT:
+                if(isLinkManSelected){
+                    viewFocus(mSend);
+                    isLinkManSelected = false;
+                    return true;
+                }
+                break;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    private void viewFocus(View view){
+        view.setFocusable(true);
+        view.setFocusableInTouchMode(true);
+        view.requestFocus();
+        view.requestFocusFromTouch();
     }
 
     private void send()
