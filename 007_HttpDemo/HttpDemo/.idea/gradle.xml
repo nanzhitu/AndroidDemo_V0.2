@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/nanohttpd_server" />
             <option value="$PROJECT_DIR$/webServer" />
             <option value="$PROJECT_DIR$/webclient" />
           </set>

@@ -1,1 +1,1 @@
-include ':app', ':webServer', ':webclient'
+include ':app', ':webServer', ':webclient', ':nanohttpd_server'

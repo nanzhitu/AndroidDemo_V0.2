@@ -60,10 +60,10 @@ public class WebServer extends Thread {
 			// 创建HTTP协议处理器
 			BasicHttpProcessor httpproc = new BasicHttpProcessor();
 			// 增加HTTP协议拦截器
-			httpproc.addInterceptor(new ResponseDate());
-			httpproc.addInterceptor(new ResponseServer());
-			httpproc.addInterceptor(new ResponseContent());
-			httpproc.addInterceptor(new ResponseConnControl());
+			httpproc.addInterceptor(new ResponseDate());//负责添加Data 的 header 到响应中
+			httpproc.addInterceptor(new ResponseServer());//负责添加 Server 的 header
+			httpproc.addInterceptor(new ResponseContent());//传出响应最重要的拦截器，是服务端协议处理器正确运行所必须的
+			httpproc.addInterceptor(new ResponseConnControl());//负责添加Connection 的 header 到响应中
 
 			// 创建HTTP服务
 			mHttpService = new HttpService(httpproc,
