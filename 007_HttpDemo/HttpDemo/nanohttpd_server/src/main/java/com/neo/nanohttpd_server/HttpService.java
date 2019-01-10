@@ -28,8 +28,8 @@ public class HttpService extends Service{
 
     @Override
     public void onCreate() {
-        mHttpServer = new HttpServer(8080);
         super.onCreate();
+        mHttpServer = new HttpServer(8080);
     }
 
     @Override
